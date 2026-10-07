@@ -141,14 +141,24 @@
           </div>
         </div>
 
-        <form class="contact-form reveal" id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Email Address" required />
-          <input type="text" name="product" placeholder="Product / Requirement" />
-          <textarea name="message" rows="5" placeholder="Tell us about your requirement"></textarea>
-          <button class="btn btn-primary" type="submit">Send Enquiry →</button>
-          <p class="form-message" id="formMessage"></p>
-        </form>
+        <form
+  class="contact-form reveal"
+  id="contactForm"
+  action="https://formsubmit.co/tajjexports@gmail.com"
+  method="POST">
+  <input type="hidden" name="_subject" value="New Enquiry - TAJJ Import & Exports" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_template" value="table" />
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="text" name="product" placeholder="Product / Requirement" />
+  <textarea name="message" rows="5" placeholder="Tell us about your requirement"></textarea>
+
+  <button class="btn btn-primary" type="submit">Send Enquiry →</button>
+  <p class="form-message" id="formMessage"></p>
+</form>
+
       </div>
     </section>
   </main>
