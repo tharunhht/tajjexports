@@ -59,13 +59,6 @@ backTop.addEventListener("click", () => window.scrollTo({top: 0, behavior: "smoo
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
-document.getElementById("contactForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const msg = document.getElementById("formMessage");
-  msg.textContent = "Thanks! Your enquiry form is ready to connect to your email or backend.";
-  msg.style.color = "#0879c9";
-  e.target.reset();
-});
 
 // Active navigation while scrolling
 const sections = [...document.querySelectorAll("main section[id]")];
